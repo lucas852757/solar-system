@@ -2,16 +2,18 @@ import React from 'react';
 import Header from './components/Header';
 import Missions from './components/Missions';
 import SolarSystem from './components/SolarSystem';
+import './Styles.css';
+import './SetImage.css';
 
 class App extends React.Component {
   render() {
     // return (<p>Sistema Solar</p>);
     return (
-      <>
+      <div id="BackgroundImage">
         <Header />
         <SolarSystem />
         <Missions />
-      </>
+      </div>
     );
   }
 }
