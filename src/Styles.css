@@ -1,3 +1,9 @@
 .Title {
     text-align: center;
+    color: #fff;
+}
+
+#BackgroundImage {
+    background-image: url("./images/background.png");
+    background-size:cover;
 }
