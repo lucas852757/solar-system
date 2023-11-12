@@ -5,17 +5,30 @@ import React from 'react';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
 import Title from './Title';
+import PlanetName from './PlanetName';
+import '../Styles.css';
 
 class SolarSystem extends React.Component {
   render() {
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
-        {planets.map((planet) => (
-          <div key={ planet.name }>
-            <PlanetCard planetName={ planet.name } planetImage={ planet.image } />
-          </div>
-        ))}
+        <div className="flex-container">
+          {planets.map((planet) => (
+            <PlanetCard
+              key={ planet.name }
+              planetName={ planet.name }
+              planetImage={ planet.image }
+            />
+
+          ))}
+        </div>
+        {/* <div className="flex-container-name">
+          {planets.map((planet) => (<PlanetName
+            key={ planet.name }
+            planetName={ planet.name }
+          />))}
+        </div> */}
       </div>
     );
   }
