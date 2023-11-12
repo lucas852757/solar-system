@@ -3,7 +3,7 @@ import '../Styles.css';
 
 class Header extends React.Component {
   render() {
-    return <header><h1 className="Title"> Sistema Solar</h1></header>;
+    return <header><h1 className="Header"> Sistema Solar</h1></header>;
   }
 }
 
