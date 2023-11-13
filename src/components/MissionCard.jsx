@@ -30,6 +30,7 @@ class MissionCard extends React.Component {
         </p>
         <p
           style={ {
+            paddingTop: '10px',
             paddingLeft: '10px',
           } }
           data-testid="mission-year"
