@@ -187,7 +187,33 @@
     /* border-style: solid;
     border-color: green; */
     /* height: 100px; */
-    width: 130px;
+    width: 140px;
     text-align: center;
 }
 
+.flex-container-position {
+    display: flex;
+    justify-content:center;
+}
+
+.flex-container-mission {
+    /* color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    /* border-style: solid; */
+    /* border-color:blue; */
+    width: 500px;
+    justify-content: space-between;
+}
+
+.mission {
+    /* flex-grow: 1; */
+    margin-top: 20px;
+    height: 130px;
+    width: 150px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 8px;
+}
