@@ -8,11 +8,50 @@ class MissionCard extends React.Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div className="mission" data-testid="mission-card">
-        <p data-testid="mission-name">{name}</p>
-        <p data-testid="mission-year">{year}</p>
-        <p data-testid="mission-country">{country}</p>
-        <p data-testid="mission-destination">{destination}</p>
+      <div
+        style={ {
+          backgroundColor: 'rgba(0, 0, 0, 0.37)',
+        } }
+        className="mission"
+        data-testid="mission-card"
+      >
+        <p
+          style={ {
+            paddingTop: '10px',
+            paddingLeft: '10px',
+            paddingBottom: '10px',
+            borderBottomWidth: '2px',
+            borderBottomStyle: 'solid',
+            borderBottomColor: 'white',
+          } }
+          data-testid="mission-name"
+        >
+          {name}
+        </p>
+        <p
+          style={ {
+            paddingLeft: '10px',
+          } }
+          data-testid="mission-year"
+        >
+          {year}
+        </p>
+        <p
+          style={ {
+            paddingLeft: '10px',
+          } }
+          data-testid="mission-country"
+        >
+          {country}
+        </p>
+        <p
+          style={ {
+            paddingLeft: '10px',
+          } }
+          data-testid="mission-destination"
+        >
+          {destination}
+        </p>
       </div>
     );
   }
