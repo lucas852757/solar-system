@@ -5,7 +5,6 @@ import React from 'react';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
 import Title from './Title';
-import PlanetName from './PlanetName';
 import '../Styles.css';
 
 class SolarSystem extends React.Component {
@@ -23,12 +22,6 @@ class SolarSystem extends React.Component {
 
           ))}
         </div>
-        {/* <div className="flex-container-name">
-          {planets.map((planet) => (<PlanetName
-            key={ planet.name }
-            planetName={ planet.name }
-          />))}
-        </div> */}
       </div>
     );
   }
