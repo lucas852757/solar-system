@@ -9,7 +9,7 @@ Desenvolvido usando: React, HTML5, CSS3
 ```
   npm install
 ```
-# Executando aplicação
+## Executando aplicação
 ```
   npm start
 ```
